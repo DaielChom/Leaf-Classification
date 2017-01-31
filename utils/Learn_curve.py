@@ -8,7 +8,7 @@ from sklearn.model_selection import ShuffleSplit
 
 def plot_learning_curve(estimator, title, X, y, ylim=None, cv=None, n_jobs=1, train_sizes=np.linspace(.1, 1.0, 5)):
    
-    plt.figure()
+    plt.figure(figsize = (12,3))
     plt.title(title)
     if ylim is not None:
         plt.ylim(*ylim)
